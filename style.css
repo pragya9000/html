@@ -1,0 +1,52 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  background-color:lightskyblue;
+}
+label {
+    width: 30%;
+    height: 40%;
+  font-weight: bold;
+}
+
+table {
+  font-weight: bold;
+  text-align: center;
+  border: solid black;
+  background-color:beige;
+  width: 50%;
+  height: 15%;
+  align-items:center;
+  margin-right: 25px;
+}   
+form {
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+.sig button {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+.hello{
+  color: black;
+  background-color: rgb(199, 47, 199);
+}
+.Btnsign{
+  color:pink ;
+}
+style{
+  h6{color: blue;}
+  p{color: rgb(0, 255, 183)}
+}
+.gall{
+  justify-content: center;
+   display: flex;
+   
+  
+}

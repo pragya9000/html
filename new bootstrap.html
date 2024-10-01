@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .bgyellow {
+      background-color: rgb(40, 26, 124);
+      color: beige;
+    }
+
+    .container.contain_1 {
+      padding-top: 0px;
+
+    }
+
+    .row.row_2 {
+      padding-top: 80px;
+
+    }
+
+    button.btn.btn-danger:hover {
+
+      background-color: white;
+      color: blue;
+      border: solid;
+      border-color: white;
+      border-width: 2px;
+    }
+
+
+    .container2 {
+
+      background-image: url("interior-designers-in-pune.jpg");
+      object-fit: contain;
+      padding: 200px;
+      opacity: 1.0;
+
+
+    }
+
+    .footer {
+
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+
+
+    }
+
+    .col {
+      text-decoration: none;
+      list-style-type: none;
+
+    }
+
+    .tool {
+      width: 200px;
+    }
+
+    .row.footer {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    ul {
+
+      list-style-type: disclosure-closed;
+    }
+
+    .row {
+      padding-top: 20px;
+
+    }
+
+    .img-service img:hover {
+      border: solid white;
+    }
+
+    .navbar {
+      background-color: rgb(12, 12, 99);
+
+
+    }
+
+    .nav-link {
+      color: #ffff;
+    }
+
+    .nav-link:hover {
+      color: lightpink;
+    }
+
+    .nav-link:active {
+      color: white;
+    }
+
+    .heading_3 {
+      text-align: center;
+      color: white;
+      padding-top: 10px;
+
+    }
+
+    .img_3 {
+
+      text-align: center;
+
+    }
+
+    .para_3 {
+
+      text-align: center;
+    }
+
+    .col.col_2.img-service {
+      padding: 40px;
+      margin: 25px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #202068;
+      border-radius: 20px;
+    }
+
+    .row5 {
+
+
+      width: 100%;
+      height: 600px;
+      padding: 30px;
+    }
+
+    .form1 {
+      background-color: skyblue;
+      padding: 50px;
+      border: solid blue;
+      border-radius: 20px;
+
+    }
+
+    .success {
+      color: white;
+    }
+
+    .nav-link:focus {
+      color: yellow !important;
+    }
+
+    .slide1 {
+      color: rgb(41, 41, 143);
+    }
+
+    .para11 {
+      color: black;
+    }
+
+    .footlast {
+      width: 100%;
+      height: 200px;
+    
+    }
+
+    .col.col-6.center {
+      text-align: center;
+    }
+
+    .btn .btn-outline-success {
+      color: blue;
+    }
+
+    .row {
+      border: blue;
+    }
+
+    .gallery.bt {
+      color: blue;
+      color: white;
+      background-color:rgb(11, 41, 162);
+    }
+
+    .gallery.bt:hover {
+      color: #0b5ed7;
+
+    }
+    .View.button{
+      background-color: blue;
+      color: white;
+    }
+    .View.button:hover{
+      color: white;
+      background-color: blue;
+
+    }  
+    
+    .btn_gallery {
+      padding-top: 20px;
+    text-align: center;
+}
+.View.button {
+    background-color: #0b5ed7;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: solid;
+}
+
+.col.col_gallery {
+    text-align: center;
+}
+.img-thumbnail{
+    
+    height: 186px !important;
+}
+.row.row_2 {
+    padding-top: 80px;
+    width: 100%;
+}
+
+
+
+.faq-section .accordion {
+  width: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+  /* background-color: #c5e5d8;*/
+  background-color: var(--secondary-text);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:before {
+  content: "";
+  position: absolute;
+  /*   right: 0.75rem; */
+  right: 0.75rem;
+  top: 1.25rem;
+  height: 2px;
+  width: 1rem;
+  background-color: var(--primary-text);
+}
+.accordion-button.collapsed:after {
+  content: "";
+  position: absolute;
+  /*   right: 1.1875rem; */
+  right: 1.1875rem;
+  top: 0.8125rem;
+  height: 1.0625rem;
+  width: 0.125rem;
+  border-style: none;
+  background-color: var(--primary-text);
+}
+
+.faq-section .accordion-button h5 {
+  /*   color: #7dbc9e; */
+  color: var(--primary-text);
+  margin-right: 13px;
+}
+.accordion-body {
+  background-color: var(--secondary-text);
+}
+/* button:focus:not(:focus-visible) {
+    outline: 0;
+} */
+
+@media screen and (min-width: 768px) {
+  /*   .faq-section .accordion {
+    width: 50%;
+    margin: 0 auto;
+  } */
+
+  .accordion-button:before {
+    right: 0.75rem;
+  }
+
+  .accordion-button.collapsed:after {
+    right: 1.1875rem;
+  }
+
+  .faq-section .accordion-button h5 {
+    margin-right: 0px;
+  }
+}
+.accordion-item{
+  background-color:white;
+}
+.w-lg-50.mx-auto{
+  color: black;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .img_3 img {
+    height: 200px !important;
+    width: 250px !important;
+}
+
+.container2 {
+ 
+    object-fit: cover !important;
+    padding: 30px !important;
+    opacity: 1.0;
+}
+
+
+.carousel-item.active img {
+    height: 200px !important;
+}
+
+
+.col.center img {
+    height: 200px !important;
+    padding: 10px !important;
+}
+
+.row.gallery_row {
+    display: contents;
+}
+
+
+.row.row5 {
+    display: block;
+}
+
+.col-6.col.form1 {
+    width: 100%;
+}
+  
+
+
+section.faq-section.py-3 {
+    margin-top: 500px;
+}
+
+.col-6.col.alpha.m1 {
+    width: 100%;
+}
+}
+.mb-5{
+  text-align: center;
+}
+.mb-2{
+  text-align: center;
+}
+.heading1{
+  color: blue;
+}
+.text-center{
+  color: blue;
+}
+.mb-5{
+  color: blue;
+}
+.mb-2{
+  color: blue;
+}
+.toggle1{
+  text-align: center;
+  padding: 5px;
+}
+
+ 
+  </style>
+</head>
+
+<body>
+   
+
+    <nav class="navbar navbar-expand-lg bgyellow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="C:\Users\abc\OneDrive\Desktop\hello july\logo.jpg" height="50px"
+            width="70px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Our_gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_us page">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#our_services">Our Services</a></li>
+                <li><a class="dropdown-item" href="#">Major Renovation</a></li>
+                <li>
+                  <hr class="dropdown-divider"> Redesign
+                </li>
+                <li><a class="dropdown-item" href="#">Other designs</a></li>
+              </ul>
+            </li>
+  
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline" style="background-color: #0b5ed7; color: #fff;" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+ 
+
+ 
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="C:\Users\abc\OneDrive\Desktop\hello july\interior-designers-in-pune.jpg" class="d-block w-100"
+            height="450px" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="slide1">First Design</h5>
+            <p class="para11">Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\abc\OneDrive\Desktop\hello july\int23.jpg" class="d-block w-100" height="450px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="slide1">Second Design</h5>
+            <p class="para11">Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\abc\OneDrive\Desktop\hello july\int3.jpg" class="d-block w-100" height="450px" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="slide1">Third design</h5>
+            <p class="para11">Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container contain_1">
+      <div class="row row_1">
+        <div class="col col">
+          <h1 class="heading1" id="about_us">About Us</h1>
+          <div class="col center">
+            <img src="C:\Users\abc\OneDrive\Desktop\hello july\cust4.webp" width="100%" height="400px">
+          </div>
+          <p>We are a team of architects, interior designers, furniture designers, and contractors that together takes the
+            process of interior Design completely online. While offering interior designing solutions (from concept to
+            Delivery), we focus on creativity, high-end Finishes, and attention to detail..we live our mission to create
+            smooth, aesthetic & functional designs for spaces that matter to you. Our competent team of interior designers
+            has required design skill & intelligence to turn your ordinary space into an extraordinary one. </p>
+          <button type="button" class="btn btn-primary">Read More</button>
+  
+        </div>
+       
+  
+      </div>
+    </div>
+
+
+    
+    <div class="row row_2">
+     
+        <h1 class="text-center" id="our_services">Our Services</h1>
+     
+      <div class="col col_2 img-service">
+        <div class="img_3">
+          <img src="C:\Users\abc\OneDrive\Desktop\hello july\cust1.jpg" height="200px" width="300px">
+        </div>
+        <h3 class="heading_3">Customised design</h3>
+        <p class="para_3"> At Custom Design Interiors, we believe that every space has the potential to be extraordinary.
+          Established in the vibrant city, we have been shaping residential and commercial environments with our passion
+          for design and dedication to excellence. </p>
+      </div>
+      <div class="col col_2 img-service">
+        <div class="img_3">
+          <img src="C:\Users\abc\OneDrive\Desktop\hello july\cust2.jpg" height="200px" width="300px">
+        </div>
+        <h3 class="heading_3">Project management</h3>
+        <p class="para_3">The interior design project management process involves organizing and coordinating the scope,
+          timeline, budget, resources and tasks required to complete a design for a client and achieve the project goals
+          within the necessary constraints. </p>
+      </div>
+      <div class="col col_2 img-service">
+        <div class="img_3">
+          <img src="C:\Users\abc\OneDrive\Desktop\hello july\cust3.webp" height="200px" width="300px">
+        </div>
+        <h3 class="heading_3">3D visualization</h3>
+        <p class="para_3">3D interior rendering involves creating realistic digital depictions of interior spaces. It
+          provides designers, architects, and clients with a visual preview of interior designs, helping them evaluate
+          layouts, finishes, and decor choices before implementation.</p>
+      </div>
+    </div>
+
+
+
+   
+      <div class="container2 my-4">
+      <h2 style="color: blue; text-align: center;">Why choose us</h2>
+      <p style="color: black; text-align: center;">We believe that every client has unique requirements and taste. In
+        order to support that we add up the best and most creative designs in order to make your dream become reality.</p>
+      <div class="text-center"><button type="button" class="btn btn-primary " style="text-align: center;">Read More</button></div>
+      </div>
+    
+      <h1 id="Our_gallery" class="text-center mt-2">Gallery</h1>
+      <div class="container contain_gallery">
+        <div class="row gallery_row">
+          <div class="col col_gallery">
+           <a href="C:\Users\abc\OneDrive\Desktop\hello july\ren1.jpeg"> <img src="C:\Users\abc\OneDrive\Desktop\hello july\ren1.jpeg" class="img-thumbnail" alt="..."></a>
+           <a href=""></a>
+          </div>
+          <div class="col col_gallery">
+            <img src="C:\Users\abc\OneDrive\Desktop\hello july\ren2.jpg" class="img-thumbnail" alt="...">
+          </div>
+          <div class="col col_gallery">
+            <img src="C:\Users\abc\OneDrive\Desktop\hello july\ren3.jpeg" class="img-thumbnail" alt="...">
+          </div>
+        </div>
+      </div>
+     <div class="btn_gallery">
+        <button class="View button">View more</button>
+   
+      </div>
+  
+
+
+      
+      
+    <h1 id="contact_us page" class="text-center mt-2">Contact us</h1>
+    <div class="row row5">
+      <div class="col-6 col form1">
+  
+        <form class="row g-3">
+          <div class="col-md-6 ">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="password">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+           
+            <select id="inputState" class="form-select">
+             <option selected>Indore</option> 
+             <option>Pune</option>
+             <option>Hyderabad </option>
+             <option>Pune</option>
+             </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>M.P</option>
+              <option>U.P</option>
+              <option>Gujrat</option>
+              <option>Andhra pradesh</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+  
+      </div>
+      <div class="col-6 col alpha m1">
+        <img src="C:\Users\abc\OneDrive\Desktop\hello july\coning11.webp" width="100%">
+      </div>
+    </div>
+
+
+
+
+   
+
+   
+      <section class="faq-section py-3">
+        <div class="container">
+    
+          <div class="w-lg-50 mx-auto">
+            <h6 class="mb-2">FAQ | Frequently Asked Questions</h6>
+            <h2 class="mb-5">Have a Questions</h2>
+            <div class="accordion accordion-flush" id="accordionExample">
+    
+             
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coll1" aria-expanded="true" aria-controls="coll1">
+                    <h5> What type of projects can you do? </h5>
+                  </button>
+                </h2>
+               
+                <div id="coll1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Global Inspirations Design offers Interior Design Consultations, Designer for a Day packages and Full-Service Interior Design for residential homes and vacation homes. These projects can range from one room to an entire house for partial and full furnishing as well as renovations including bathrooms and kitchens.
+                  </div>
+                </div>
+              </div>
+    
+             
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll2" aria-expanded="false" aria-controls="coll2">
+                    <h5> Why should I hire an interior designer?</h5>
+                  </button>
+                </h2>
+                <div id="coll2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Interior Designers not only have a keen eye for detail, knowing what works and what doesn’t work together, but they are also experience trouble shooters. Every design project will face some type of challenges, whether it be delays in production, items lost in transport, items damaged during transport… the list goes on. At the same time, interior designers usually have far more resources than you would have in terms of vendors, suppliers, artisans and trade. This means an interior designer will not only create a beautiful, cohesive space, where every single item is intentional, but also ensure a smooth and headache free process for you, by handling issues that will arise along the way.
+                  </div>
+                </div>
+              </div>
+    
+             
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll3" aria-expanded="false" aria-controls="coll3">
+                    <h5> How do I choose the right designer for me?</h5>
+                  </button>
+                </h2>
+                <div id="coll3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The collaboration between you and your interior designer is very personal. The first thing you should consider is whether you like the designer as a person and what they stand for. Then of course you should take into account their experience and expertise, What do others say about working with this interior designer? Lastly, you should also consider their style. Some designer are specialized in a specific style, others work with many different styles.
+
+
+                  </div>
+                </div>
+              </div>
+    
+         
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                 
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll4" aria-expanded="false" aria-controls="coll4">
+                    <h5> What cities do you work in?</h5>
+                  </button>
+                </h2>
+                <div id="coll4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    I am based in Zurich, Switzerland, but will travel to wherever my clients need me, as long as the additional time and expenses are compensated and makes sense for the client and for my business. This usually depends on the scope of a project. However, I also have experience working remotely and virtually.
+                  </div>
+                </div>
+              </div>
+
+    
+             
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+               
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#coll5" aria-expanded="false" aria-controls="coll5">
+                    <h5> How far would you travel for a project? </h5>
+                  </button>
+                </h2>
+                <div id="coll5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This depends on the scope of the project, however, I have travelled as far as to the Caribbean on several occasions. For smaller projects or consultations, it is also possible to work virtually.
+    
+                    <br />
+    
+                    Null refers to the assignment of value to a variable that isn’t meant to contain any value.<br />
+                    ex. let b = null;
+                    console.log(b); // Output: null
+                    <br />
+    
+                    Undeclared refers to variables that don’t exist in an application or program or haven’t been declared. <br />
+                    ex.
+                    console.log(c); // ReferenceError: c is not defined
+    
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+    
+        </div>
+      </section>
+      
+   
+
+      
+      <div class="toggle1">
+        <p>
+          <a class="btn btn-info" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+          <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+          <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Our team of interior designers have put together ideas across kitchen, bedroom, living room and more, to help you pick a design that will best suit your home interior requirements.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Design your dream home keeping these interior decoration ideas in mind.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  
+      <div class="footlast">
+      <div class="row footer" style="background-color: rgb(40, 26, 124);">
+        <div class="col">
+          <img class="tool" src="C:\Users\abc\OneDrive\Desktop\hello july\logo.jpg" height="140px" width="100px">
+          <li>Visitors counter</li>
+          <li>Last modified :July 2024</li>
+            </ul>
+          </div>
+        <div class="col ">
+          <ul>
+            <li>Terms and conditions</li>
+            <li>Accebility statement</li>
+            <li>Privacy policy</li>
+            <li>Copyright policy</li>
+            <li>Hyperlink policy</li>
+            <li>Disclaimer
+            <li>Privacy policy</li>
+            <li>Copyright policy</li>
+            </ul>
+          </div>
+        <div class="col">
+          <ul>
+            <li>Right to service</li>
+            <li>Right to information</li>
+            <li>Tenders/Quotations</li>
+            <li>Establishment matter</li>
+          </ul>
+  
+        </div>
+        <div class="col">
+          <ul>
+            <li>Notice board</li>
+            <li>CFSC</li>
+            <li>Industrial policy</li>
+            <li>Special Rule</li>
+          </ul>
+          </div>
+      </div>
+    </div>
+
+     
+   
+
+  
+</body>
+
+</html>

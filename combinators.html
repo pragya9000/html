@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .pragya p{
+        background-color: blue !important;
+       }
+
+       .second_parent > p {
+        background-color: red;
+       }
+
+       .pragya > p {
+        background-color: aqua !important;
+       }
+
+       .second_parent + p {
+        background-color: yellow;
+       }
+
+       .pragya + p {
+        background-color: green;
+       }
+
+       .pragya ~ p {
+        background-color: violet;
+       }
+
+    
+       p{
+            background-color: black !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pragya">
+        <p>First Para</p>
+        <p>Second Para</p>
+        <div class="child">
+            <p>Third Para</p>
+        </div>
+    </div>
+    <p>Fourth Para</p>
+    <div class="second_parent">
+        <p>Fifth Para</p>
+        <p>Six Para</p>
+    </div>
+    <p>Seventh Para</p>
+</body>
+</html>

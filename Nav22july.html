@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .active {
+      color: purple;
+    }
+
+    ul {
+      list-style-type:
+        none;
+    }
+
+    a {
+      text-decoration: none;
+
+      padding: 5px 5px;
+      border-radius: 5px;
+      color: rgb(0, 0, 0);
+    }
+
+    a:hover {
+      color: black;
+      background-color: rgba(210, 162, 239, 0.985);
+    }
+
+    .li11 {
+      float: right;
+      padding: 25px;
+    }
+
+    .ul11 {
+      display: flex;
+      flex-direction: row;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .gallery {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .roll {
+      width: 50%;
+    }
+
+    img.bg_image1 {
+      width: 100%;
+    }
+
+    .jag {
+      color: white;
+      width: 80px;
+      height: 40px;
+    }
+
+    .cart {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .head2 {
+      text-align: center;
+      color: green;
+    }
+
+    .oppo {
+      border: solid rgb(76, 122, 200);
+      padding: 6px;
+      border-radius: 10px;
+      border-color: rgb(146, 42, 206);
+      margin: 10px;
+      text-align: center;
+    }
+
+    .ol {
+      padding: 30px;
+    }
+
+    .btn_1 {
+      padding: 10px;
+      border: solid;
+      border-color: rgb(157, 86, 223);
+      border-radius: 10px;
+      background-color: rgb(157, 86, 223);
+      color: rgb(255, 255, 255);
+      margin-top: 10px;
+      width: 20%;
+    }
+
+    .btn_1:hover {
+      padding: 10px;
+      border: solid;
+      border-color: rgb(157, 86, 223);
+      border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(157, 86, 223);
+      border-width: 2px;
+    }
+
+    .soft {
+      width: 100%;
+      height: 500px;
+    }
+
+    .last1 {
+      background-image: url("2423.jpg");
+      width: 100%;
+      height: 250px;
+      background-repeat: no-repeat;
+      color: white;
+      margin-top: 65px;
+      background-size: cover;
+      text-align: center;
+
+      text-align: center;
+      position: relative;
+      opacity: 0.8;
+      background-color: black;
+      padding-top: 80px;
+    }
+
+    .buttonlast:hover {
+      color: rgb(20, 179, 232);
+      border: solid darkblue;
+    }
+
+    .form {
+
+      display: flex;
+      padding: 30px;
+
+    }
+
+
+
+
+    .form1 {
+
+      width: 50%;
+    }
+
+    input {
+      color: rgb(0, 0, 0);
+      border: black;
+      padding: 9px;
+      border: solid rebeccapurple;
+      margin-top: auto;
+      width: 50%;
+      margin-top: 10px;
+    }
+
+    .foot {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: auto;
+      row-gap: 5px;
+
+      background-color: black;
+    }
+
+    .level {
+
+      color: beige;
+      width: 16%;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #d080f2;
+      min-width: 100px;
+      z-index: 1;
+      margin-top: 7px;
+    }
+
+
+    .submenu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .submenu a:hover {
+      background-color: #f0f0f0;
+      color: #d080f2;
+    }
+
+    ul li:hover .submenu {
+      display: block;
+    }
+
+    @media screen and (max-width: 425px) {
+      .li11 {
+        float: none;
+        padding: 25px;
+      }
+
+      .gallery {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+      }
+
+      .ol {
+        margin-top: 0px;
+        padding-top: 0%;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .btn_1 {
+        width: 50%;
+      }
+
+      .btn_read {
+        text-align: center;
+        margin-top: -10px;
+      }
+
+      .cart {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .li11 {
+        float: right;
+        padding: 12px;
+      }
+
+      .ul11 {
+        display: flex;
+        flex-direction: row;
+
+      }
+
+      .head12 {
+        padding: auto;
+        margin: auto;
+      }
+
+      .img-nav {
+        display: none;
+      }
+
+      .form {
+
+
+        justify-content: center;
+        flex-direction: column;
+
+      }
+
+      .form1 {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20px;
+
+      }
+
+
+      .foot {
+        display: flex;
+        flex-direction: column;
+
+      }
+
+      .level {
+        color: beige;
+        width: 100%;
+      }
+
+      input {
+        color: rgb(0, 0, 0);
+        border: black;
+        padding: 9px;
+        border: solid rebeccapurple;
+        margin-top: auto;
+        width: 90%;
+        margin-top: 10px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head12">
+    <ul class="ul11">
+      <li class="li11 img-nav">
+        <img
+          src="C:\Users\abc\OneDrive\Desktop\hello july\abstract-people-community-logo-design-template-3243f6f17dc74bf79d9b2f46b220057a_screen.jpg"
+          height="30px" width="60px" />
+      </li>
+      <li class="li11"><a class="active" href="">Home</a></li>
+      <li class="li11"><a href="">About</a>
+        <div class="submenu">
+          <a href="#">Our Mission</a>
+          <a href="#">Our Story</a>
+          <a href="">Company services</a>
+          <a href="">Photo gallery</a>
+        </div>
+
+      </li>
+      <li class="li11"><a href="">News</a>
+        <div class="submenu">
+          <a href="#">Current news</a>
+          <a href="#">Old news</a>
+          <a href="">Important news</a>
+          <a href="">IT news</a>
+        </div>
+      </li>
+
+      <li class="li11"><a href="">Contact</a>
+        <div class="submenu">
+          <a href="#">First section</a>
+          <a href="">Second section</a>
+          <a href="">Third section</a>
+          <a href="">Fourth section</a>
+          <a href="">Fifth section</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <div class="bg_img">
+    <img class="bg_image1" src="C:\Users\abc\OneDrive\Desktop\hello july\ssdd.jpg" />
+  </div>
+
+  <h2 style="text-align: center;">About Us</h2>
+
+  <div class="gallery">
+    <div style="width: 50%">
+      <img src="C:\Users\abc\OneDrive\Desktop\hello july\images.jpeg" width="500px" height="300px" />
+    </div>
+    <div class="ol">
+      <p class="p1">
+        The general purpose of Our company is to develop and promote advanced
+        information technologies for multi-user operation. Our emphasis is on
+        offering a high degree of product user friendliness through a
+        positive, creative and focused company staff. we develop innovative
+        and creative products and services that provide total communication
+        and information solutions.
+      </p>
+      <br />
+      <div class="
+        btn_read">
+        <button class="btn_1">Read more</button>
+      </div>
+
+    </div>
+  </div>
+
+  <h2 style="text-align: center;">Services </h2>
+
+  <div class="cart">
+    <div class="oppo">
+      <h2 class="head2">Web development</h2>
+      <img src="C:\Users\abc\OneDrive\Desktop\hello july\web.png" width="260px" />
+      <p>
+        Web development is the work involved in developing a website for the
+        Internet or an intranet. Web development can range from developing a
+        simple single static page of plain text to complex web applications,
+        electronic businesses, and social network services.
+      </p>
+    </div>
+    <div class="oppo">
+      <h2 class="head2">Mobile development</h2>
+      <img src="C:\Users\abc\OneDrive\Desktop\hello july\Mobile-App.png" width="260px" />
+      <p>
+        Mobile development describes the processes and procedures for writing
+        software for mobile devices, such as smartphones, smartwatches, and
+        tablets.
+      </p>
+    </div>
+    <div class="oppo">
+      <h2 class="head2">Product design</h2>
+      <img src="C:\Users\abc\OneDrive\Desktop\hello july\prod.png" width="260px" />
+      <p>
+        Product design is the process of imagining, conceptualising, testing,
+        iterating and refining a product, service or experience so it’s ready
+        for its end user. Designers spend significant time on each of these
+        steps, meaning that product design is a blend of research, strategy,
+        industry knowledge and creative thinking.
+      </p>
+    </div>
+
+    <div class="oppo">
+      <h2 class="head2">Software testing</h2>
+      <img src="C:\Users\abc\OneDrive\Desktop\hello july\best-software-testing-courses-in-pune.webp" width="260px" />
+      <p>
+        Software testing is the act of checking whether software satisfies
+        expectations. Software testing can provide objective, independent
+        information about the quality of software and the risk of its failure
+        to a user or sponsor.
+      </p>
+    </div>
+  </div>
+  <div class="last1">
+    <h1>SOFTWARE DEVELOPMENT</h1>
+
+    <p>Product design is the process of imagining, conceptualising, testing, iterating and refining a product, servicee
+    </p>
+    <button class="buttonlast">Learn more >></button>
+  </div>
+
+
+  <div class="form">
+
+    <div class="form1">
+      <form>
+        <h1>Contact us</h1>
+        <label for="User-name">User name</label><br>
+        <input type="text"><br>
+        <label for="Password">Password</label><br>
+        <input type="text"><br>
+        <label for="Address">Address</label><br>
+        <input type="text"><br>
+        <label for="Contact number">Contact number</label><br>
+        <input type="text"><br>
+
+        <button class="btn_1">Submit</button>
+
+
+      </form>
+    </div>
+    <div class="form1">
+      <img src="C:\Users\abc\OneDrive\Desktop\hello july\formimg.jpeg " width="100%" height="100%" />
+    </div>
+  </div>
+  <div class="foot">
+
+    <div class="level">
+      <img src="C:\Users\abc\OneDrive\Desktop\hello july\logo 25.jpeg">
+
+    </div>
+    <div class="level">
+      <ul>
+        <li>Services</li>
+        <li>Web development</li>
+        <li>Mobile development</li>
+        <li>Product designing</li>
+      </ul>
+    </div>
+
+    <div class="level">
+      <ul>
+        <li>About us</li>
+        <li>Contact us</li>
+      </ul>
+
+    </div>
+
+    <div class="level">
+      <ul>
+        <li>Social media</li>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Linkedin</li>
+      </ul>
+      <p></p>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
